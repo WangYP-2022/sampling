@@ -40,30 +40,45 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `3`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+This survey investigates how age influences music taste, particularly regarding perceptions of popular music. The research aims to understand both cross-sectional differences (comparing people of different ages) and longitudinal patterns (how individual preferences change over time) to contribute to sociological understanding of cultural consumption and aging.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+Target Population: All residents of Toronto aged 15 and above who can complete a survey in English.
+
+Sampling Frame: University of Toronto student database combined with a stratified random sample from Toronto census data to ensure adequate representation across age groups (15-24, 25-34, 35-49, 50-64, 65+).
+
+Sampling Units: Individual persons selected from the sampling frame.
+
+Sampling Strategy: Stratified random sampling with oversampling of older age groups (50+) to ensure sufficient sample sizes for comparison. Target sample size of 1,500 respondents (300 per age stratum) to allow for robust statistical analysis and published academic findings.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. What is your age? _____ years
+2. On a scale of 1-5 (1=Strongly Disagree, 5=Strongly Agree): "I enjoy listening to current popular music (top 40 hits)."
+3. How many hours per week do you typically spend listening to music? 
+   □ 0-2 hours  □ 3-7 hours  □ 8-14 hours  □ 15+ hours
+4. What genres of music do you primarily listen to? (Select all that apply)
+   □ Pop  □ Rock  □ Hip-Hop/Rap  □ Country  □ Classical  □ Jazz  □ Electronic/EDM  □ Other: _____
+5. Thinking back 10 years ago (if applicable), how would you describe your music preferences compared to now?
+   □ Very different  □ Somewhat different  □ About the same  □ N/A (I'm under 25)
+6. On a scale of 1-5: "Music that was popular when I was a teenager/young adult (ages 15-25) is the best music."
+7. How often do you actively seek out new music or artists you haven't heard before?
+   □ Daily  □ Weekly  □ Monthly  □ Rarely  □ Never
+8. Which statement best describes your attitude toward current popular music?
+   □ I enjoy it and listen regularly
+   □ I'm neutral about it
+   □ I prefer music from earlier eras
+   □ I don't listen to popular music at all
+9. What is your highest level of education completed?
+   □ High school or less  □ Some college/university  □ Bachelor's degree  □ Graduate degree
+10. Gender: □ Male  □ Female  □ Non-binary  □ Prefer not to say
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +86,66 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. SAMPLE TYPE:
+Stratified random sampling using a complex multi-stage design. The sampling frame was created from multiple linked sources including Census data, administrative data, and billing files (telephone numbers and addresses).
+
+2. SAMPLE SIZE:
+Target sample size of approximately 25,000 respondents across Canada's 10 provinces. The PUMF (Public Use Microdata File) contains a subset of this for confidentiality protection.
+
+3. TARGET POPULATION:
+Non-institutionalized persons aged 15 years and older living in private households in the 10 provinces of Canada. Excluded: residents of Yukon, Northwest Territories, and Nunavut; full-time residents of institutions; persons without telephones or internet access.
+
+4. SAMPLING FRAME:
+An integrated frame combining multiple sources: Census of Population data, Address Register (AR), administrative files, and telephone number databases (both landline and cellular). This approach improved coverage compared to traditional random digit dialing, including cell-phone-only households.
+
+5. SURVEY MODE(S):
+For the first time in 2018, the GSS offered two collection modes:
+- Internet/online questionnaire (rEQ - respondent-completed electronic questionnaire)
+- Telephone interview (iEQ - interviewer-assisted electronic questionnaire using CATI)
+This dual-mode approach was implemented to adapt to changing technology use and respondent preferences.
+
+6. TIMELINE:
+Collection period: September to December 2018 (4 months)
+Data release: Planned for 2020, with the PUMF released in January 2021
+
+7. RESPONSE RATE:
+While the exact response rate for Cycle 33 (2018 GVP) is not explicitly stated in available documentation, comparable 2018 GSS cycles showed response rates around 50-53%. The 2013 GSS GVP had a response rate near 50%, suggesting the 2018 rate is likely in this range. The introduction of online response options may have affected response patterns.
+
+8. WEIGHTS:
+Bootstrap weights are provided with the dataset for variance estimation. Survey weights adjust for:
+- Unequal probabilities of selection
+- Non-response (including adjustments using administrative data on non-responding household characteristics such as income and composition)
+- Post-stratification to known population totals from Census data
+The bootstrap method (with multiple replicate weights) is used to calculate proper standard errors and confidence intervals.
+
+9. DATA PROCESSING:
+- Computer-assisted interviewing (CATI for telephone, web-based for online) with built-in edit checks during collection
+- Post-collection editing and validation
+- Coding of open-ended responses
+- Imputation for missing data
+- Derivation of analytical variables
+- Application of survey weights
+
+10. CLEANING, IMPUTATION, ETC:
+- Rigorous quality assurance applied across all statistical process steps
+- Validation measures included: analysis of changes over time, verification through cross-tabulations, comparison with similar data sources
+- For the PUMF, additional disclosure control measures: some variables suppressed, top-coded, or had categories collapsed to prevent identification
+- Imputation procedures used for item non-response (specific methods not detailed in available documentation)
+
+11. SOURCES OF ERROR:
+SAMPLING ERROR: Present due to sample-based (vs. census) design; bootstrap weights enable estimation of sampling variability.
+
+NON-SAMPLING ERROR sources:
+- Coverage error: Despite improved frame, some over-coverage and under-coverage remains; households without telephones or internet excluded
+- Non-response error: Some selected households/individuals did not participate; addressed through weighting adjustments using administrative data
+- Measurement error: Possible from questionnaire design, respondent misunderstanding, or mode effects
+- Processing error: Potential errors in data entry, coding, editing (minimized through quality control)
+
+12. LIMITATIONS, KNOWN BIASES, ETC:
+- COMPARABILITY ISSUE: The 2018 GSS GVP results are NOT directly comparable to previous iterations (2013, 2010, 2007, 2004) due to the introduction of online data collection. The mode effect (online vs. telephone) likely impacted estimates, making trend analysis problematic.
+- Self-reported data subject to recall bias, social desirability bias
+- The online mode may attract different types of respondents than telephone interviews
+- Four-month collection period may not capture seasonal variation in volunteering/donating behavior
 ```
 
 ## Rubric
